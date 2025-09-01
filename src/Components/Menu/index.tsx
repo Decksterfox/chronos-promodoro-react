@@ -25,12 +25,17 @@ export function Menu() {
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
   ) {
     event.preventDefault();
-
     // Alterna o valor do tema entre 'dark' e 'light'
-    setTheme(prevTheme => (prevTheme === 'dark' ? 'light' : 'dark'));
+    setTheme(prevTheme => {
+      const nextTheme = prevTheme === 'dark' ? 'light' : 'dark';
+      return nextTheme;
+    });
   }
   useEffect(() => {
     localStorage.setItem('theme', theme);
+    // Define o atributo data-theme em vez de class
+    document.documentElement.setAttribute('data-theme', theme);
+    console.log('Classe aplicada no <html>:');
   }, [theme]);
   return (
     <>
