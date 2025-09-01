@@ -1,0 +1,23 @@
+.logo {
+  padding-top: 2.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4.2rem;
+  color: var(--primary);
+}
+.logoLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  gap: 0.4;
+  text-decoration: none;
+  color: var(--primary);
+  transition: all 0.1s ease-in-out;
+}
+.logoLink:hover {
+  filter: brightness(80%);
+}
+.logo svg {
+  width: 8.2rem;
+  height: 8.2rem;
+}
