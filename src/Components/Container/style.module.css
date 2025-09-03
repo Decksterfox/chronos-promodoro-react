@@ -4,8 +4,8 @@
 .container {
   max-width: 98rem;
   margin: 0 auto;
+  text-align: center;
 }
 .content {
   margin: 1.2rem;
-  text-align: center;
 }

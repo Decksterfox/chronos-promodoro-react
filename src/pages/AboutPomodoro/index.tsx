@@ -2,7 +2,7 @@ import { Heading } from 'lucide-react';
 import { Container } from '../../Components/Container';
 import { GenericHtml } from '../../Components/GenericHtml';
 import { MainTemplates } from '../../templates/MainTemplates';
-
+import styles from './styles.module.css';
 export function AboutPomodoro() {
   return (
     <MainTemplates>
@@ -10,7 +10,7 @@ export function AboutPomodoro() {
         <GenericHtml>
           <Heading>A Técnica Pomodoro 🍅</Heading>
 
-          <p>
+          <p className={styles.p}>
             A Técnica Pomodoro é uma metodologia de produtividade criada por{' '}
             <strong>Francesco Cirillo</strong>, que consiste em dividir o
             trabalho em blocos de tempo (os famosos "Pomodoros") intercalados
@@ -21,7 +21,7 @@ export function AboutPomodoro() {
           <img src='https://placehold.co/1920x1080' alt='' />
 
           <h2>Como funciona o Pomodoro tradicional?</h2>
-          <ul>
+          <ul className={styles.removeBolList}>
             <li>
               <strong>1. Defina uma tarefa</strong> que você deseja realizar.
             </li>
@@ -63,7 +63,7 @@ export function AboutPomodoro() {
           <p>
             <strong>Nosso padrão:</strong>
           </p>
-          <ul>
+          <ul className={styles.removeBolList}>
             <li>
               Ciclos <strong>ímpares</strong>: Trabalho (foco).
             </li>

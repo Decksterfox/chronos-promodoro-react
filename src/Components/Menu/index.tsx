@@ -39,7 +39,6 @@ export function Menu() {
   }, [theme]);
   return (
     <>
-      <h1>{theme}</h1>
       <nav className={style.menu}>
         <a
           href='#'

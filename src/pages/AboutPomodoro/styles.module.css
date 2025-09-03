@@ -1,0 +1,10 @@
+.removeBolList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+  background-color: blue;
+}
+.p {
+  text-align: justify;
+}
